@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "type": "data_connector",
+  "extraData": {
+    "disabledPeriodicSync": false,
+    "dataSourceConfigUiUri": "http://vocation-pgsql.vocation-talent.repl.co/"
+  },
+  "protocol": {
+    "type": "http",
+    "httpProtocol": {
+      "uris": [{
+        "type": "tableMeta",
+        "uri": "/api/table_meta"
+      },{
+        "type": "records",
+        "uri": "/api/records"
+      }]
+    }
+  }
+}
